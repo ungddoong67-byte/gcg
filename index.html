@@ -157,6 +157,7 @@
       
         <div class="section local_area">
             <h3>📦 금천구 퀵서비스 전차종 신속 배차 가이드</h3>
+          <p>가산동 독산동 시흥동 금천 가산디지털단지 시흥공구상가 시흥 시흥대로 금천구 전지역</p>
             <ul>
                 <li>🏍️ 금천구오토바이퀵 : 소형 긴급 화물 및 중요 서류 신속한 배송 지원</li>
                 <li>🚙 금천구다마스퀵 : 중소형 가전, 소형이사 안전한 안심 배송</li>
@@ -254,5 +255,28 @@
       </footer>
    </div>
 </div>
+  <script>
+  // 마우스 우클릭 차단
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 드래그 차단
+  document.addEventListener('dragstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 텍스트 선택(블록 지정) 차단
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 복사 키(Ctrl+C / Cmd+C) 차단
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
